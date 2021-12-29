@@ -150,7 +150,7 @@ function sumarLikesDeUsuario(usuario) {
 
 }
 
-function agregarMetodoCalculoDescuento() {
+function agregarMetodoCalculoDescuento(producto) {
   // Agregar un método (función) al objeto "producto" llamado "calcularPrecioDescuento"
   // Este método debe multiplicar el "precio" del "producto" ("producto.precio" o "producto[precio]") y "porcentajeDeDescuento" para obtener el descuento
   // El método resta el descuento del precio y devuelve el precio con descuento
@@ -160,12 +160,12 @@ function agregarMetodoCalculoDescuento() {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-  var productocondescuento=0
-  const producto= {
-    calcularpreciodedescuento: function(){
-      productocondescuento= producto.precio - (producto.precio * porcentajededescuento);}
-    }
-      return productocondescuento ;
+  
+  producto.calcularpreciodedescuento= function(){
+      return this.precio - (this.precio * this.porcentajededescuento);
+    };
+  
+      return producto ;
     }
   
 
