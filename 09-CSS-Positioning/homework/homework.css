@@ -62,7 +62,23 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 }
 #ejerciciosiete{
     display: flex;
+  
 
 }
-
   
+  
+#elementoUno{
+ order: 3;
+ align-self: flex-start;
+}
+#elementodos{
+    order:4;
+    align-self: flex-end;
+}
+#elementotres{
+    order:1;
+    align-self: flex-end;
+}
+#elementocuatro{
+    align-self:center;
+}
