@@ -27,11 +27,7 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var nuevoarray = []
-  for (var i = 0 ; i < nuevoarray.length; i++ );{
-   nuevoarray [i]= array[i] + 1;
-
-  return nuevoarray
+ return array.interger +1
 
 }
 
@@ -62,7 +58,7 @@ function dePalabrasAFrase(palabras) {
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
   palabras = ['Hello', 'world!'];
-  return (palabras [0],[1])
+  return (palabras [0]+ " "+ palabras[1]+"!")
 }
 
 
@@ -70,7 +66,8 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  var pos = array.indexOf (elemento);
+  array.prototype.includes(elemento)
+
 
 
 function agregarNumeros(numeros) {
@@ -79,7 +76,7 @@ function agregarNumeros(numeros) {
   // Tu código:
   var lista = []
   for (var i= 0; i < lista.length; i++);
-  lista[i] = lista[i] + numeros[i]
+  lista[i] = lista[i] + numeros.interger[i]
   return lista
 }
 
@@ -90,7 +87,7 @@ function promedioResultadosTest(resultadosTest) {
   // Tu código:
   var lista = []
   for (var i= 0; i < lista.length; i++);
-  lista[i] = lista[i] + resultadosTest[i]
+  lista[i] = lista[i] + resultadosTest.interger[i]
   return lista / i
 }
 
@@ -99,12 +96,8 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-  var lista = []
-  var a = 0
-  for (var i= 0; i < lista.length; i++);
-   if (lista[i] > a );
-   a= lista [i]
-   return a
+ let a=match.Max(numeros.interger)
+ console.log(a);
 
 }
 
@@ -113,23 +106,22 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-  var lista = []
-  var lista2 = []
-  var lista3 = []
-  for (var i= 0; i < lista.length && i< lista2.length;  i++);
-  lista3 [i]= lista [i] * lista2 [i];
-return lista3
+var result =0
+  for(var i =0; i<arguments.length; i++){
+ result = arguments[i]* a
+  if ( arguments.length[i]===0);
+  console.log(0);
+  console.log(arguments[i]);
 }
-
+return result
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-  var lista= []
-  for (var i= 0; i < arreglo.length; i++);
-  if (arreglo [i] > 18);
-  lista [i]= arreglo[i];
-  return lista
+ let mayor=0;
+ mayor= arreglo.forEach(arreglo => {arreglo > 18 
+ });
+ console.log(mayor);
    
 }
 
@@ -211,9 +203,9 @@ function breakStatement(numero) {
   //Pista: usá el statement 'break'
   // Tu código:
   var array= []
-  for(var i=0; i< 10; i++);
+  for(var i=0; i< 10; i++){ 
     array[i]= numero[i] + 2 ;
-    console.log(array),
+    console.log(array);
       if (array [i]=== i);{
         break;
         console.log ("se interrumpió la ejecucion");
@@ -226,13 +218,16 @@ function continueStatement(numero) {
   //Pista: usá el statement 'continue'
   // Tu código:
   var array= []
-  for(var i=0; i< 10; i++);
+  for(var i=0; i< 10; i++){ 
     array[i]= numero[i] + 2 ;
     if (i < 5);{
-    console.log(array),}
-    continue;
     console.log(array);
+    continue;
+    }
   }
+    console.log(array);
+  
+}
 
 
 // No modificar nada debajo de esta línea

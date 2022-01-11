@@ -5,9 +5,11 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if (x >= y){
-  return x;}
-  return y;
+  if (x.IsInterger > y.IsInterger );{
+ console.log(x);
+ if(x.IsInterger < y.IsInterger);
+ console.log(y);
+ console.log(x);
 }
 
 function mayoriaDeEdad(edad) {
@@ -105,8 +107,11 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  return matchMedia.floor (numero);
+ if(numero===match.floor (numero));
+ return true
+
 }
+return false
 
 function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3, devuelve "fizz"
@@ -149,13 +154,12 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   for (let i = numero  ; i > 1 ; i++ ){
-    if (i / 2 !== 0)
-      if (i / 3 !== 0)
-      if (i / 5 !== 0)
-        if (i / 7 !== 0)
-        console.log ("es primo")
-        else
-        return"falso"
+    if (i ===2|| i===3||i ===5|| i===7||i===11);
+    console.log(true);
+    if (i / 2 !== 0 ; i / 3 !== 0;i / 5 !== 0;i / 7 !== 0)
+      console.log(false);
+      
+        
   }
 }
 
@@ -168,19 +172,22 @@ if (valor < 50 ){
   console.log ("soy falso")
 }
 
-function tablaDelSeis(array){
+function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-   array [ 6 , 12 , 18 , 24 , 30, 36, 42, 48, 54, 60 ]
-   console.log (array);
+  for( var i=0; i< 61; i++){
+    console.log("6 x "+ i*6);
+  }
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  match.round (numero)
-  console.log (numero.legth);
+ if (numero.length=== 3){
+  return true
+ }
+ return false
 }
 
 function doWhile(numero) {
