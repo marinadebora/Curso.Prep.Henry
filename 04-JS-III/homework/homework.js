@@ -1,4 +1,4 @@
-// No cambies los nombres de las funciones.
+  // No cambies los nombres de las funciones.
 
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
@@ -67,7 +67,7 @@ function arrayContiene(array, elemento) {
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
   array.prototype.includes(elemento)
-
+ }
 
 
 function agregarNumeros(numeros) {
@@ -114,7 +114,7 @@ var result =0
   console.log(arguments[i]);
 }
 return result
-
+ }
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
@@ -206,9 +206,11 @@ function breakStatement(numero) {
   for(var i=0; i< 10; i++){ 
     array[i]= numero[i] + 2 ;
     console.log(array);
+     }
       if (array [i]=== i);{
         break;
         console.log ("se interrumpió la ejecucion");
+         }
 }
 function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
