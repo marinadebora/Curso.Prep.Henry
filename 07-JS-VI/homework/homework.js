@@ -4,23 +4,24 @@ function mayuscula(nombre) {
   //La función recibe un nombre y debe devolver el mismo que recibe pero con su primer letra en mayúscula
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
-  var nuevonombre=nombre.map(function(elemento){
-    return elemento.capitalize();
-  },
+ 
+  const nombre2= nombre.charAt(0).toUpperCase()
+  console.log(nombre2.slice(1));
 
+ }
 
 function invocarCallback(cb) {
   // Invoca al callback `cb`
   //Tu código:
    cb();
-},
+}
 
 function operacionMatematica(n1, n2, cb) {
   //Vamos a recibir una función que realiza una operación matemática como callback junto con dos números.
   //Devolver el callback pasándole como argumentos los números recibidos.
   //Tu código:
   return cb(n1,n2);
-},
+}
 
 function sumarArray(numeros, cb) {
   // Suma todos los números enteros (int/integers) de un array ("numeros")
@@ -28,19 +29,19 @@ function sumarArray(numeros, cb) {
   // No es necesario devolver nada 
   //Tu código:
   var sumareduce= numeros.reduce (function( suma1, suma2){
-    return cb (suma1 + suma2); 0
+    return  suma1 + suma2; 
       
   },
   cb (sumareduce)
-,
 
+ ,
     
 
 function forEach (array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
-  array.forEach(function(elemento, indice){
+  array.forEach(function(elemento){
     cb= elemento})
   
 },
@@ -52,27 +53,25 @@ function map(array, cb) {
   //Tu código:
  
  
- let arr= array.map( function(){ arr.lenght=== array.lenght});
- console.log(arr);
- }
+return array.map( function(e){
+  return cb(e)
+})
+
+ },
  
 
 
 
-,
+
 
 
 function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
-  let arr= array.filter(function(array){
-    array[0]=== a
-  })
-   return arr
-
-
-  })
+  
+  return array.filter(e => e[0]==="a")
+ 
 },
 
 // No modificar nada debajo de esta línea
@@ -86,4 +85,4 @@ module.exports = {
   forEach,
   map,
   filter
-}
+};
