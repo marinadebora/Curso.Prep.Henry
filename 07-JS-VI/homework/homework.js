@@ -5,8 +5,7 @@ function mayuscula(nombre) {
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
  
-  const nombre2= nombre.charAt(0).toUpperCase()
-  console.log(nombre2.slice(1));
+ return nombre[0].toUpperCase() + nombre.slice(1);
 
  }
 
@@ -29,12 +28,12 @@ function sumarArray(numeros, cb) {
   // No es necesario devolver nada 
   //Tu código:
   var sumareduce= numeros.reduce (function( suma1, suma2){
-    return  suma1 + suma2; 
-      
-  },
+    return  suma1 + suma2})
+    
+    
   cb (sumareduce)
-
- ,
+ 
+  }
     
 
 function forEach (array, cb) {
@@ -42,9 +41,9 @@ function forEach (array, cb) {
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
   array.forEach(function(elemento){
-    cb= elemento})
+   cb(elemento) })
   
-},
+}
 
 function map(array, cb) {
   // Crea un nuevo array
@@ -57,7 +56,7 @@ return array.map( function(e){
   return cb(e)
 })
 
- },
+ }
  
 
 
@@ -72,7 +71,7 @@ function filter(array) {
   
   return array.filter(e => e[0]==="a")
  
-},
+}
 
 // No modificar nada debajo de esta línea
 // --------------------------------
