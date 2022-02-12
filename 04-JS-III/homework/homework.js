@@ -36,8 +36,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  elemento.push = ("pedro");{
-  console.log (array)}
+  elemento.push("pedro")
+return array
 }
 
 
@@ -46,8 +46,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-  elemento.unshift = ("pedro");{
-  console.log (array)}
+  elemento.unshift("pedro")
+  return array
 }
 
 
@@ -105,14 +105,17 @@ function numeroMasGrande(numeros) {
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
-  // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
+// Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-var result =0
+  var result =0
   for(var i =0; i<arguments.length; i++){
- result = arguments[i]* a
-  if ( arguments.length[i]===0);
-  console.log(0);
-  console.log(arguments[i]);
+ result = result * arguments[i];
+  if ( arguments[i]===0){
+    return 0
+  }else{
+    return arguments[i]
+  }
+ 
 }
 return result
  }
@@ -132,10 +135,15 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  for (var i = 0; i < nuemerodedia.length; i++);
-  if (i=== 1 || i=== 7);
-  console.log("es fin de semana");
-  console.log ("es dia laboral");
+  for (var i = 0; i < nuemeroDeDia.length; i++){
+    if (numeroDeDia[i]=== 1 || 7){
+      return "es fin de semana"
+    }else {
+      return "es dia laboral"
+    }
+  }
+  
+  
 } 
 
 
@@ -143,12 +151,11 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  var array=[]
-  for(var n= 0; n < array.length; n++)
-   if (array[n][0] === 9); {
-   }  
-   console.log(true);
-   console.log(false);
+if(n[0]===9){
+  return true;
+}else {
+  return false
+}
 }
 
 
@@ -156,12 +163,8 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-    var a = arreglo[0]
-  for(var i = 0 ; i < arreglo.length; i++);
-    if (arreglo[i] === a);
-    a= arreglo[i]
-      console.log(true);
-      console.log(false);
+  arreglo.every(elemento=>elemento===elemento);
+ 
 } 
 
 
